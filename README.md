@@ -10,6 +10,6 @@ Pflanzenbewässerungsautomat mit Arduino
 
 Die Steuerung übernimmt ein Aduino Uno. Jeder Pflnzentopf wird individuell überwacht und gegossen.
 
-![Picture](https://github.com/heise/Selbstbaugiessautomat/blob/master/IMG_0160_klein.JPG) 
+![Picture](https://github.com/MakeMagazinDE/Selbstbaugiessautomat/blob/master/IMG_0160_klein.JPG) 
 
 Den vollständigen Artikel mit der Bauanleitung gibt es in der **[Make-Ausgabe 2/2020 ab Seite 34** zu lesen. 
