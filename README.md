@@ -6,7 +6,7 @@ Maker Media GmbH
 # Selbstbaubewässerer
 Pflanzenbewässerungsautomat mit Arduino
 
-### Dieser leicht nachzbauende Automat gießt Ihre Topfpflanzen sensorgesteuert und überflutungsgeschützt.
+### Dieser leicht nachzubauende Automat gießt Ihre Topfpflanzen sensorgesteuert und überflutungsgeschützt.
 
 Die Steuerung übernimmt ein Aduino Uno. Jeder Pflnzentopf wird individuell überwacht und gegossen.
 
