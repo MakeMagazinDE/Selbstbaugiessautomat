@@ -1,2 +1,2 @@
-# Selbstbaubew-sserer
+# Selbstbaubewässerer
 Pflanzenbewässerungsautomat mit Arduino
