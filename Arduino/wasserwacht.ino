@@ -38,7 +38,7 @@ void setup() {
   pinMode(pumpeTopf2Pin, OUTPUT);
   pinMode(pumpeTopf3Pin, OUTPUT);
 
-  //Pumpen zu Begin aus
+  //Pumpen zu Beginn aus
   digitalWrite(pumpeTopf1Pin,LOW);
   digitalWrite(pumpeTopf2Pin,LOW);
   digitalWrite(pumpeTopf3Pin,LOW);
@@ -98,7 +98,7 @@ void loop() {
       Serial.print("\t");
     }
 
-  if(istTopf3 > sollTopf2) 
+  if(istTopf3 > sollTopf3) 
     {
       digitalWrite(pumpeTopf3Pin, HIGH);
       Serial.println("Topf3 zu trocken!!!"   );
