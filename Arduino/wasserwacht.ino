@@ -2,9 +2,6 @@ int sensorTopf1Pin = A1;
 int sensorTopf2Pin = A2;
 int sensorTopf3Pin = A3;
 
-//Falls man einen Sensor für den Wasserstand braucht
-int sensorReservePin = A0;
-
 int pumpeTopf1Pin = 11;
 int pumpeTopf2Pin = 12;
 int pumpeTopf3Pin = 13;
@@ -13,16 +10,15 @@ int pumpeTopf3Pin = 13;
 int sollTopf1 = 300;
 int sollTopf2 = 300;
 int sollTopf3 = 300;
-int sollReserve = 580;
 
 int istTopf1 = 700;
 int istTopf2 = 700;
 int istTopf3 = 700;
 
-//Wartezeit zwischen den Messungen
+//Wartezeit zwischen den Messungen (in ms)
 int Wartezeit = 20000;
 
-//Solang wird bei zu trockenem Boden gepumpt
+//Solang wird bei zu trockenem Boden gepumpt (in ms)
 int Pumpzeit = 3000;
 
 void setup() {
@@ -31,7 +27,6 @@ void setup() {
   pinMode(sensorTopf1Pin, INPUT);
   pinMode(sensorTopf2Pin, INPUT);
   pinMode(sensorTopf3Pin, INPUT);
-  pinMode(sensorReservePin, INPUT);
 
   //Alle Pumpen sind Ausgänge
   pinMode(pumpeTopf1Pin, OUTPUT);
@@ -98,7 +93,7 @@ void loop() {
       Serial.print("\t");
     }
 
-  if(istTopf3 > sollTopf2) 
+  if(istTopf3 > sollTopf3) 
     {
       digitalWrite(pumpeTopf3Pin, HIGH);
       Serial.println("Topf3 zu trocken!!!"   );
